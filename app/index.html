@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="khatapatr-ui">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Khatapatr UI</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+			<link href="public/css/styles.css" rel="stylesheet">
+		</head>
+		<body>
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><i class="fa fa-briefcase"></i> KhataPatr</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a  class="dropdown-toggle" data-toggle="dropdown">Ledgers <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#/ledger/all/">View All</a></li>
+								<li class="divider"></li>
+								<li><a href="#/ledger/new/">Create New</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a  class="dropdown-toggle" data-toggle="dropdown">Transactions <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#/transactions/payment/">Payment</a></li>
+								<li class="divider"></li>
+								<li><a href="#/transactions/receipt/">Receipt</a></li>
+								<li class="divider"></li>
+								<li><a href="#/transactions/sales/">Create Sales Invoice</a></li>
+								<li class="divider"></li>
+								<li><a href="#/transactions/purchase/">Record Purchase</a></li>
+								<li class="divider"></li>
+								<li><a href="#/transactions/bank/">Bank</a></li>
+								<li class="divider"></li>
+								<li><a href="#/transactions/journal/">Record Journal</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a  class="dropdown-toggle" data-toggle="dropdown">Voucher Books <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#/vouchers/payment/">Payment Book</a></li>
+								<li class="divider"></li>
+								<li><a href="#/vouchers/receipt/">Receipt Book</a></li>
+								<li class="divider"></li>
+								<li><a href="#/vouchers/sales/">Sales Book</a></li>
+								<li class="divider"></li>
+								<li><a href="#/vouchers/purchase/">Purchase Book</a></li>
+								<li class="divider"></li>
+								<li><a href="#/vouchers/bank/">Bank Book</a></li>
+								<li class="divider"></li>
+								<li><a href="#/vouchers/journal/">Journal Book</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a  class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#/reports/trialbalance/">Trial Balance</a></li>
+								<li class="divider"></li>
+								<li><a href="#/reports/balancesheet/">Balance Sheet</a></li>
+								<li class="divider"></li>
+								<li><a href="#/reports/pandl/">Profit & Loss Statement</a></li>
+							</ul>
+						</li>
+
+					</ul>
+
+
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a  class="dropdown-toggle" data-toggle="dropdown">demo <b class="caret"></b></a>
+							<ul class="dropdown-menu user-dropdown-menu">
+
+								<li><a href="/book/edit/15/">Edit Details</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Configurations</li>
+								<li><a href="/invoice/configurations/">Invoice Settings</a></li>
+								<li class="divider"></li>
+								<li><a href="/accounts/password/">Change Password</a></li>
+								<li><a href="/accounts/logout/">Logout</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">KhataPatr</li>
+								<li><a href="#/book/new/">Create New Book</a></li>
+								<li><a href="#/book/select/">Select Other Book</a></li>
+
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!--/.nav-collapse -->
+
+			<div ng-view></div>
+
+			<!-- /.container -->
+			<!-- script references -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+			<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>
